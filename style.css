@@ -24,8 +24,49 @@ ul{
 }
 
 body{
-   font-family: Arial, sans-serif;
-   background:red;
-   margin:40px;
-   line-height:1.8;
+    font-family: Arial, sans-serif;
+    background:#F8FAFC;
+    color:#1F2937;
+    margin:40px;
+    line-height:1.8;
+}
+
+h1{
+    color:#1D4ED8;
+    font-size:42px;
+    margin-bottom:5px;
+}
+
+h2{
+    color:#2563EB;
+    border-bottom:2px solid #2563EB;
+    padding-bottom:8px;
+    margin-top:35px;
+}
+
+p{
+    font-size:18px;
+    color:#374151;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+strong{
+    color:#111827;
+}
+
+a{
+    color:#2563EB;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
 }
