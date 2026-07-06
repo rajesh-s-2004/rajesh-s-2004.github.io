@@ -121,3 +121,7 @@ nav a{
     font-weight:bold;
     transition:0.3s;
 }
+
+nav{
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
