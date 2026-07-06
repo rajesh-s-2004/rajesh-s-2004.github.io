@@ -60,4 +60,8 @@ a:hover{
 /* ==========================
    Navigation Bar
 ========================== */
-
+nav{
+    background:#1E3A8A;
+    padding:15px 30px;
+    border-radius:10px;
+}
