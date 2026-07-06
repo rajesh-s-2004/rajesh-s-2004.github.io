@@ -77,3 +77,9 @@ nav li{
     display:inline-block;
     margin-right:20px;
 }
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
