@@ -190,17 +190,37 @@ a:hover{
     color:white;
 }
 /* Profile Photo */
-.profile-photo{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #2563EB;
-    box-shadow:0 10px 30px rgba(37,99,235,0.25);
-    margin-bottom:25px;
-    transition:0.3s ease;
+.hero{
+    min-height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(15,23,42,0.85), rgba(15,23,42,0.85));
+    color:white;
+    border-radius:0;
+    box-shadow:none;
 }
 
-.profile-photo:hover{
-    transform:scale(1.05);
+.hero h1{
+    color:white;
+    font-size:52px;
+    margin:20px 0 10px;
+}
+
+.hero .subtitle{
+    color:#CBD5E1;
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.profile-photo{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    object-position:center 10%;
+    border:5px solid #2563EB;
+    box-shadow:0 0 35px rgba(37,99,235,0.6);
 }
