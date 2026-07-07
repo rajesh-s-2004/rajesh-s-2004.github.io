@@ -217,15 +217,18 @@ a:hover{
     margin-bottom:30px;
 }
 
-..profile-photo{
-    width:60px;
-    height:60px;
+.hero .profile-photo{
+    width:160px !important;
+    height:160px !important;
+    max-width:160px !important;
+    max-height:160px !important;
     border-radius:50%;
     object-fit:cover;
     object-position:center 10%;
     border:5px solid #2563EB;
     box-shadow:0 0 35px rgba(37,99,235,0.6);
     margin-bottom:20px;
+    display:block;
 }
 
 @media (max-width:768px){
