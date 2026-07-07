@@ -160,3 +160,27 @@ a:hover{
         font-size:36px;
     }
 }
+.hero{
+    padding:60px 0;
+}
+
+.subtitle{
+    font-size:22px;
+    color:#4B5563;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563EB;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1D4ED8;
+    color:white;
+}
