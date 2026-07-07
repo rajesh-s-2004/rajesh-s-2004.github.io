@@ -191,13 +191,13 @@ a:hover{
 }
 /* Profile Photo */
 .profile-photo{
-    width:220px;
-    height:220px;
+    width:180px;
+    height:180px;
     border-radius:50%;
     object-fit:cover;
     border:5px solid #2563EB;
     box-shadow:0 10px 30px rgba(37,99,235,0.25);
-    margin-bottom:30px;
+    margin-bottom:25px;
     transition:0.3s ease;
 }
 
