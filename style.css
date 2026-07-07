@@ -161,7 +161,12 @@ a:hover{
     }
 }
 .hero{
-    padding:60px 0;
+    background:#ffffff;
+    padding:80px 40px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    text-align:center;
+    margin-bottom:30px;
 }
 
 .subtitle{
