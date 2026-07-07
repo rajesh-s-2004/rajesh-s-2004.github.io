@@ -191,7 +191,7 @@ a:hover{
 }
 /* Profile Photo */
 .hero{
-    min-height:80vh;
+    min-height:520px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -201,6 +201,8 @@ a:hover{
     color:white;
     border-radius:0;
     box-shadow:none;
+    padding:60px 20px;
+    margin-bottom:30px;
 }
 
 .hero h1{
@@ -215,7 +217,7 @@ a:hover{
     margin-bottom:30px;
 }
 
-.profile-photo{
+..profile-photo{
     width:160px;
     height:160px;
     border-radius:50%;
@@ -223,4 +225,14 @@ a:hover{
     object-position:center 10%;
     border:5px solid #2563EB;
     box-shadow:0 0 35px rgba(37,99,235,0.6);
+    margin-bottom:20px;
+}
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:460px;
+        padding:40px 15px;
+    }
+
 }
