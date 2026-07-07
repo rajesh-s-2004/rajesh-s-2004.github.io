@@ -191,7 +191,7 @@ a:hover{
 }
 /* Profile Photo */
 .hero{
-    min-height:520px;
+    min-height:100px;
     display:flex;
     flex-direction:column;
     justify-content:center;
