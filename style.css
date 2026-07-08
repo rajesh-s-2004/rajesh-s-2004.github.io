@@ -840,3 +840,40 @@ a:hover{
         font-size:16px;
     }
 }
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#1E3A8A;
+    color:#ffffff;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer p{
+    margin:8px 0;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.footer-text{
+    color:#DBEAFE;
+}
+
+.footer-text strong{
+    color:#ffffff;
+}
+
+@media(max-width:768px){
+
+    footer{
+        padding:25px 15px;
+    }
+
+    footer p{
+        font-size:15px;
+    }
+
+}
