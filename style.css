@@ -558,3 +558,90 @@ a:hover{
         font-size:23px;
     }
 }
+
+/* ===========================
+   Education Section
+=========================== */
+
+#education{
+    padding:80px 8%;
+    background:#F8FAFC;
+}
+
+#education h2{
+    text-align:center;
+    font-size:48px;
+    color:#2563EB;
+    margin-bottom:50px;
+}
+
+.education-container{
+    max-width:900px;
+    margin:auto;
+}
+
+.education-card{
+    background:#ffffff;
+    border:1px solid #E5E7EB;
+    border-radius:16px;
+    padding:35px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.education-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(37,99,235,0.15);
+}
+
+.education-card h3{
+    color:#2563EB;
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.education-card h4{
+    color:#0F172A;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.edu-year{
+    display:inline-block;
+    background:#DBEAFE;
+    color:#2563EB;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.education-card p{
+    color:#475569;
+    line-height:1.8;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+    #education h2{
+        font-size:36px;
+    }
+
+    .education-card{
+        padding:25px;
+    }
+
+    .education-card h3{
+        font-size:24px;
+    }
+
+    .education-card h4{
+        font-size:18px;
+    }
+
+    .education-card p{
+        font-size:16px;
+    }
+
+}
