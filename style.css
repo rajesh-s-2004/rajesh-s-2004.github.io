@@ -455,3 +455,25 @@ a:hover{
     font-size:14px;
     font-weight:600;
 }
+
+.project-tools{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#EFF6FF;
+    color:#2563EB;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.project-result{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 18px;
+    background:#DCFCE7;
+    color:#15803D;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
