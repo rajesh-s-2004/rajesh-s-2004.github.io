@@ -362,7 +362,7 @@ a:hover{
     background:#F8FAFC;
     padding:30px;
     border-radius:16px;
-    border:1px solid #E2E8F0;
+    border:1px solid #E5E7EB;
     box-shadow:0 8px 25px rgba(0,0,0,0.08);
     transition:0.3s ease;
 }
@@ -376,6 +376,7 @@ a:hover{
 .skill-card h3{
     color:#2563EB;
     font-size:24px;
+    font-weight:700;
     margin-bottom:15px;
 }
 
