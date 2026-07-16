@@ -359,11 +359,11 @@ img{
 .image-frame img{
     position:relative;
     z-index:2;
-    width:108%;
-    height:108%;
+    width:112%;
+    height:112%;
     object-fit:contain;
     object-position:center bottom;
-    transform:translateX(-8px);
+    transform:translateX(12px);
 }
 
 .floating-card{
