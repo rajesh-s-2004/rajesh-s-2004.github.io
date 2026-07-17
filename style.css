@@ -870,3 +870,55 @@ footer{
     padding:80px 0;
     scroll-margin-top:90px;
 }
+
+.experience-timeline{
+    display:grid;
+    gap:30px;
+    margin-top:50px;
+}
+
+.experience-card{
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;
+    padding:28px;
+    transition:0.3s ease;
+}
+
+.experience-card:hover{
+    transform:translateY(-8px);
+    border-color:#3B82F6;
+    box-shadow:0 12px 30px rgba(59,130,246,0.18);
+}
+
+.date{
+    display:inline-block;
+    padding:8px 16px;
+    background:rgba(59,130,246,0.12);
+    border:1px solid rgba(59,130,246,0.30);
+    border-radius:30px;
+    color:#60A5FA;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:18px;
+}
+
+.role{
+    font-size:32px;
+    font-weight:700;
+    color:#FFFFFF;
+    margin-bottom:8px;
+}
+
+.company{
+    color:#60A5FA;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.description{
+    color:#CBD5E1;
+    line-height:1.8;
+    font-size:17px;
+}
