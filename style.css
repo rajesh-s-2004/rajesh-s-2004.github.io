@@ -881,7 +881,7 @@ footer{
     background:rgba(255,255,255,0.03);
     border:1px solid rgba(255,255,255,0.08);
     border-radius:18px;
-    padding:28px;
+    padding:22px;
     transition:0.3s ease;
 }
 
@@ -893,39 +893,39 @@ footer{
 
 .date{
     display:inline-block;
-    padding:8px 16px;
+    padding:6px 14px;
     background:rgba(59,130,246,0.12);
     border:1px solid rgba(59,130,246,0.30);
     border-radius:30px;
     color:#60A5FA;
     font-size:14px;
     font-weight:600;
-    margin-bottom:18px;
+    margin-bottom:14px;
 }
 
 .role{
-    font-size:32px;
+    font-size:27px;
     font-weight:700;
     color:#FFFFFF;
-    margin-bottom:8px;
+    margin-bottom:5px;
 }
 
 .company{
     color:#60A5FA;
-    font-size:20px;
+    font-size:18px;
     font-weight:700;
-    margin-bottom:18px;
+    margin-bottom:12px;
 }
 
 .description{
     color:#CBD5E1;
-    line-height:1.8;
-    font-size:17px;
+    line-height:1.7;
+    font-size:15px;
 }
 
 .experience-timeline{
     position:relative;
-    padding-left:45px;
+    padding-left:25px;
 }
 
 .experience-timeline::before{
@@ -933,8 +933,8 @@ footer{
     position:absolute;
     top:0;
     bottom:0;
-    left:15px;
-    width:2px;
+    left:8px;
+    width:20px;
     background:rgba(59,130,246,0.35);
 }
 
