@@ -1056,3 +1056,44 @@ footer{
         min-height:auto;
     }
 }
+
+/* Premium Education Container */
+
+#education .container{
+    padding:55px 45px;
+    background:linear-gradient(
+        145deg,
+        rgba(15,23,42,0.96),
+        rgba(2,6,23,0.92)
+    );
+    border:1px solid rgba(96,165,250,0.22);
+    border-radius:28px;
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.30),
+        0 0 35px rgba(37,99,235,0.10);
+}
+
+#education .section-title{
+    margin-bottom:50px;
+}
+
+#education .education-grid{
+    margin-top:0;
+}
+
+.education-card{
+    background:rgba(15,23,42,0.72);
+    border:1px solid rgba(148,163,184,0.14);
+}
+
+.education-card:hover{
+    border-color:#3B82F6;
+    box-shadow:0 18px 40px rgba(37,99,235,0.18);
+}
+
+@media(max-width:768px){
+    #education .container{
+        padding:40px 22px;
+        border-radius:20px;
+    }
+}
