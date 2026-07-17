@@ -720,6 +720,8 @@ footer{
     border:1px solid rgba(255,255,255,0.08);
     border-radius:18px;
     transition:.3s;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .tool-card img{
@@ -734,9 +736,22 @@ footer{
     color:#ffffff;
 }
 
+.tool-card{
+    ...
+}
+
 .tool-card:hover{
     transform:translateY(-8px);
     border-color:#3B82F6;
+    box-shadow:0 12px 30px rgba(59,130,246,0.25);
+}
+
+.tool-card img{
+    transition:transform .3s ease;
+}
+
+.tool-card:hover img{
+    transform:scale(1.1);
 }
 
 /* ===========================
