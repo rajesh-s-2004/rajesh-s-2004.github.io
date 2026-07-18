@@ -1159,6 +1159,11 @@ footer{
     transform: translateY(-3px);
 }
 
+#contact {
+    padding: 90px 0 140px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
