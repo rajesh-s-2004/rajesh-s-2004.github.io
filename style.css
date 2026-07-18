@@ -1203,3 +1203,47 @@ footer{
     text-align: center;
     height: fit-content;
 }
+
+/* CTA Buttons */
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.contact-primary-btn,
+.contact-secondary-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-primary-btn {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+}
+
+.contact-primary-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+.contact-secondary-btn {
+    background: transparent;
+    border: 1px solid #2563eb;
+    color: #60a5fa;
+}
+
+.contact-secondary-btn:hover {
+    background: rgba(37, 99, 235, 0.10);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
