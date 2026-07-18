@@ -1098,3 +1098,30 @@ footer{
         border-radius:20px;
     }
 }
+
+/* ===========================
+   Projects Section
+=========================== */
+
+#projects {
+    padding: 80px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.project-card {
+    max-width: 800px;
+    background: #111827;
+    border: 1px solid rgba(59,130,246,0.25);
+    border-radius: 20px;
+    padding: 35px;
+}
