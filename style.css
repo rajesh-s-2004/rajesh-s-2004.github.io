@@ -125,7 +125,7 @@ img{
     min-height:100vh;
     display:flex;
     align-items:center;
-    padding:120px 0 60px;
+    padding:145px 0 80px;
     overflow:hidden;
     background:
         radial-gradient(
@@ -596,7 +596,7 @@ footer{
 =========================== */
 
 #about{
-    padding: 50px 0 90px;
+    padding: 120px 0 90px;
     scroll-margin-top: 90px;
 }
 
