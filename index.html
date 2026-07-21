@@ -11,7 +11,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
           rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -111,7 +111,7 @@
 
         </section>
 
-        <section id="about" class="reveal">
+        <section id="about" data-aos="fade-up">
   <div class="container">
 
     <div class="section-title">
@@ -446,6 +446,15 @@
     <footer>
         <p>© 2026 Rajesh S. All Rights Reserved.</p>
     </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 800,
+    once: true,
+    offset: 100
+});
+</script>
 
  </body>
 </html>
