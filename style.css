@@ -1263,7 +1263,7 @@ footer{
 
 .reveal {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(40px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
