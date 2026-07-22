@@ -1267,7 +1267,7 @@ footer{
 }
 
 /* ===========================
-   FINAL SECTION SPACING FIX
+   FINAL LAYOUT ALIGNMENT FIX
 =========================== */
 
 body{
@@ -1278,24 +1278,74 @@ section{
     scroll-margin-top:78px;
 }
 
+/* Home - prevent About section from showing */
 .hero{
-    min-height:calc(100vh - 78px);
-    padding:45px 0 55px;
+    min-height:calc(100vh - 78px + 35px);
+    padding:35px 0 45px;
 }
 
-#about,
-#skills,
-#experience,
-#education,
-#projects,
-#contact{
-    padding:90px 0;
+/* About - move content upward */
+#about{
+    padding:55px 0 80px;
     scroll-margin-top:78px;
 }
 
-#about .section-title,
-#skills .section-title,
-#experience .section-title,
-#education .section-title{
-    margin-bottom:40px;
+#about .section-title{
+    margin-bottom:30px;
+}
+
+.about-grid{
+    gap:45px;
+}
+
+/* Skills - move upward and fit tool names */
+#skills{
+    padding:42px 0 70px;
+    scroll-margin-top:78px;
+}
+
+#skills .section-title{
+    margin-bottom:25px;
+}
+
+.skills-grid{
+    margin-top:30px;
+    gap:40px;
+}
+
+.tools-grid{
+    gap:14px;
+}
+
+.tool-card{
+    min-height:130px;
+    padding:16px 12px;
+}
+
+/* Experience */
+#experience{
+    padding:60px 0 80px;
+    scroll-margin-top:78px;
+}
+
+/* Education - move complete container upward */
+#education{
+    padding:55px 0 80px;
+    scroll-margin-top:78px;
+}
+
+/* Projects - give proper navbar spacing */
+#projects{
+    padding:55px 0 110px;
+    scroll-margin-top:78px;
+}
+
+#projects h2{
+    margin-bottom:35px;
+}
+
+/* Contact - move content slightly downward */
+#contact{
+    padding:110px 0 140px;
+    scroll-margin-top:78px;
 }
