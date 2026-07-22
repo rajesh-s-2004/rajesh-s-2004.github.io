@@ -1351,29 +1351,30 @@ section{
 }
 
 /* ===========================
-   FINAL HOME / EDUCATION / CONTACT FIX
+   HOME AND CONTACT FINAL FIX
 =========================== */
 
-/* Home: keep only hero content visible */
+/* Home content slightly lower + About completely hidden */
+#home{
+    scroll-margin-top:0;
+}
+
 .hero{
-    height:calc(100vh - 78px);
-    min-height:680px;
-    padding:28px 0 38px;
+    height:auto;
+    min-height:calc(100vh - 78px + 120px);
+    padding:60px 0 75px;
 }
 
 .hero-container{
-    height:100%;
+    min-height:560px;
+    align-items:center;
 }
 
-.hero-image-area{
-    min-height:460px;
+/* Contact should not stick under navbar */
+#contact{
+    padding:95px 0 130px;
+    scroll-margin-top:110px;
 }
-
-/* Education: reduce top space, add balanced bottom space */
-#education{
-    padding:35px 0 95px;
-}
-
 /* Contact: move the whole section upward */
 #contact{
     padding:55px 0 110px;
