@@ -1349,3 +1349,32 @@ section{
     padding:110px 0 140px;
     scroll-margin-top:78px;
 }
+
+/* ===========================
+   FINAL HOME / EDUCATION / CONTACT FIX
+=========================== */
+
+/* Home: keep only hero content visible */
+.hero{
+    height:calc(100vh - 78px);
+    min-height:680px;
+    padding:28px 0 38px;
+}
+
+.hero-container{
+    height:100%;
+}
+
+.hero-image-area{
+    min-height:460px;
+}
+
+/* Education: reduce top space, add balanced bottom space */
+#education{
+    padding:35px 0 95px;
+}
+
+/* Contact: move the whole section upward */
+#contact{
+    padding:55px 0 110px;
+}
