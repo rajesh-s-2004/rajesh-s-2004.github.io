@@ -122,10 +122,10 @@ img{
 
 .hero{
     position:relative;
-    min-height:100vh;
+    min-height:calc(100vh - 78px);
     display:flex;
     align-items:center;
-    padding:145px 0 80px;
+    padding:110px 0 55px;
     overflow:hidden;
     background:
         radial-gradient(
