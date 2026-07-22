@@ -1265,3 +1265,37 @@ footer{
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ===========================
+   FINAL SECTION SPACING FIX
+=========================== */
+
+body{
+    padding-top:78px;
+}
+
+section{
+    scroll-margin-top:78px;
+}
+
+.hero{
+    min-height:calc(100vh - 78px);
+    padding:45px 0 55px;
+}
+
+#about,
+#skills,
+#experience,
+#education,
+#projects,
+#contact{
+    padding:90px 0;
+    scroll-margin-top:78px;
+}
+
+#about .section-title,
+#skills .section-title,
+#experience .section-title,
+#education .section-title{
+    margin-bottom:40px;
+}
