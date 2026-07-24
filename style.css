@@ -1356,7 +1356,7 @@ section{
 
 /* Home content slightly lower + About completely hidden */
 #home{
-    scroll-margin-top:0;
+    scroll-margin-top:78px;
 }
 
 .hero{
