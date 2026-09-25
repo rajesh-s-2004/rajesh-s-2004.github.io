@@ -1379,3 +1379,36 @@ section{
 #contact{
     padding:55px 0 110px;
 }
+/* =====================================================
+   STEP 1 — NAVIGATION & SCROLLING FIX
+   ===================================================== */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+}
+
+/* Keep every section clear of the fixed navbar */
+section {
+    scroll-margin-top: 95px;
+}
+
+/* Main navigation anchor spacing */
+#home,
+#about,
+#skills,
+#experience,
+#education,
+#projects,
+#contact {
+    scroll-margin-top: 95px;
+}
+
+/* Keep navbar above every section and animation */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
