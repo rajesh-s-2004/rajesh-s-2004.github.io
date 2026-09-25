@@ -1350,35 +1350,6 @@ section{
     scroll-margin-top:78px;
 }
 
-/* ===========================
-   HOME AND CONTACT FINAL FIX
-=========================== */
-
-/* Home content slightly lower + About completely hidden */
-#home{
-    scroll-margin-top:78px;
-}
-
-.hero{
-    height:auto;
-    min-height:calc(100vh - 78px + 120px);
-    padding:60px 0 75px;
-}
-
-.hero-container{
-    min-height:560px;
-    align-items:center;
-}
-
-/* Contact should not stick under navbar */
-#contact{
-    padding:95px 0 130px;
-    scroll-margin-top:110px;
-}
-/* Contact: move the whole section upward */
-#contact{
-    padding:55px 0 110px;
-}
 /* =====================================================
    STEP 1 — NAVIGATION & SCROLLING FIX
    ===================================================== */
