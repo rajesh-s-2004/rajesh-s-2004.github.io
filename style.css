@@ -544,7 +544,6 @@ footer{
     }
 }
 
-
 /* =================================
    Small Mobile
 ================================= */
@@ -1298,4 +1297,102 @@ section {
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+
+/* =================================
+   HERO - CLEAN FINAL OVERRIDE
+================================= */
+
+#home.hero {
+    position: relative;
+    min-height: calc(100vh - 78px);
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 55px 0 60px;
+    scroll-margin-top: 78px;
+}
+
+#home .hero-container {
+    width: min(1120px, 90%);
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 45px;
+}
+
+#home .hero-content {
+    max-width: 650px;
+}
+
+#home .hero-image-area {
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .image-frame {
+    width: 360px;
+    height: 420px;
+}
+
+#home .floating-card-one {
+    top: 55px;
+    right: -20px;
+}
+
+#home .floating-card-two {
+    bottom: 35px;
+    left: -30px;
+}
+
+/* Hero responsive */
+
+@media (max-width: 960px) {
+
+    #home.hero {
+        padding: 55px 0 65px;
+    }
+
+    #home .hero-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    #home .hero-content {
+        margin: 0 auto;
+    }
+
+    #home .hero-image-area {
+        min-height: 430px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #home.hero {
+        padding: 190px 0 60px;
+    }
+
+    #home .hero-container {
+        width: min(92%, 560px);
+    }
+
+    #home .image-frame {
+        width: min(340px, 90vw);
+        height: 400px;
+    }
+
+    #home .floating-card-one {
+        right: 0;
+        top: 50px;
+    }
+
+    #home .floating-card-two {
+        left: 0;
+        bottom: 30px;
+    }
 }
