@@ -449,5 +449,34 @@ AOS.init({
 });
 </script>
 
+        <script>
+document.querySelectorAll('.nav-links a, .logo, .nav-button').forEach(link => {
+    link.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+
+        if (targetId && targetId.startsWith('#')) {
+            const target = document.querySelector(targetId);
+
+            if (target) {
+                e.preventDefault();
+
+                const headerHeight = document.querySelector('.site-header').offsetHeight;
+                const targetPosition =
+                    target.getBoundingClientRect().top +
+                    window.pageYOffset -
+                    headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+
+                history.pushState(null, '', targetId);
+            }
+        }
+    });
+});
+</script>
+
  </body>
 </html>
