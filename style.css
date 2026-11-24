@@ -1379,3 +1379,25 @@ footer {
     transform: none;
   }
 }
+
+/* Featured Project Company Logos */
+
+.lg {
+  width: 100%;
+  height: 110px;
+  background: #ffffff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.lg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
