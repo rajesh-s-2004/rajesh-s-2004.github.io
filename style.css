@@ -1401,3 +1401,71 @@ footer {
   object-fit: contain;
   display: block;
 }
+
+/* PREMIUM HERO BACKGROUND */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(
+      ellipse at 50% 48%,
+      rgba(212, 166, 54, 0.13),
+      transparent 48%
+    ),
+    linear-gradient(135deg, #0a1022, #080d1b 65%, #10172b);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image:
+    linear-gradient(rgba(218, 184, 91, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(218, 184, 91, 0.12) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: linear-gradient(to bottom, black, transparent 95%);
+}
+
+.hero h1 {
+  letter-spacing: -0.045em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.hero p {
+  max-width: 620px;
+  line-height: 1.85;
+}
+
+.hero .cta {
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.hero .cta .btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero .cta .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(218, 184, 91, 0.18);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding-top: 55px;
+    padding-bottom: 40px;
+  }
+
+  .hero h1 {
+    line-height: 1.16;
+    letter-spacing: -0.035em;
+  }
+
+  .hero p {
+    line-height: 1.7;
+  }
+}
