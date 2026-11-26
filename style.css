@@ -1498,14 +1498,14 @@ footer {
 }
 
 .analytics-float {
-  bottom: 25%;
-  left: -2%;
+  bottom: 24%;
+  left: -10%;
   animation-delay: 1s;
 }
 
 .leads-float {
-  bottom: 9%;
-  right: 0;
+  bottom: 14%;
+  right: -5%;
   animation-delay: 1.5s;
 }
 
