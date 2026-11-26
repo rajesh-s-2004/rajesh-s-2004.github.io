@@ -764,82 +764,206 @@ nav a.l.on {
   margin-bottom: 16px;
 }
 
-/* Experience timeline */
 
-.tl {
+/* =====================================
+   PREMIUM EXPERIENCE TIMELINE
+===================================== */
+
+.experience-section .tl {
   position: relative;
-  padding-left: 34px;
-  display: grid;
-  gap: 34px;
+  padding-left: 42px;
+  gap: 32px;
 }
 
-.tl::before,
-.tl::after {
-  content: "";
-  position: absolute;
+/* Timeline background line */
+.experience-section .tl::before {
   left: 7px;
-  top: 6px;
   width: 2px;
-  bottom: 6px;
-  background: var(--line);
+  background: rgba(220, 184, 72, 0.16);
 }
 
-.tl::after {
-  background: linear-gradient(var(--b), var(--c));
-  transform-origin: top;
-  transform: scaleY(var(--p, 0));
+/* Animated gold timeline line */
+.experience-section .tl::after {
+  left: 7px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #f5d77b,
+    #c89b2c,
+    #f5d77b
+  );
+  box-shadow: 0 0 10px rgba(220, 184, 72, 0.35);
 }
 
-.tl article {
+/* Experience cards */
+.experience-section .tl article {
   position: relative;
+  padding: 26px 28px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.015)
+  );
+  border: 1px solid rgba(220, 184, 72, 0.18);
+  border-radius: 18px;
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
-.tl article::before {
-  content: "";
-  position: absolute;
-  left: -34px;
-  top: 7px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
+/* Timeline dots */
+.experience-section .tl article::before {
+  left: -44px;
+  top: 28px;
+  width: 17px;
+  height: 17px;
   background: var(--bg);
-  border: 3px solid var(--b);
-  z-index: 1;
+  border: 3px solid #e5bd4c;
+  box-shadow: 0 0 0 5px rgba(229, 189, 76, 0.10),
+              0 0 15px rgba(229, 189, 76, 0.30);
+  transition: box-shadow 0.3s ease;
 }
 
-.tl time {
-  font-size: .85rem;
+/* Card hover effect */
+@media (hover: hover) {
+  .experience-section .tl article:hover {
+    transform: translateY(-5px);
+    border-color: rgba(229, 189, 76, 0.55);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22),
+                0 0 18px rgba(229, 189, 76, 0.07);
+  }
+
+  .experience-section .tl article:hover::before {
+    box-shadow: 0 0 0 6px rgba(229, 189, 76, 0.13),
+                0 0 22px rgba(229, 189, 76, 0.55);
+  }
+}
+
+/* Date and current role */
+.experience-section .experience-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.experience-section .tl time {
   color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 500;
 }
 
-.tl h3 {
-  font-size: 1.2rem;
-  margin: 3px 0 2px;
+.experience-section .experience-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  border-radius: 30px;
+  color: #f5d77b;
+  background: rgba(220, 184, 72, 0.12);
+  border: 1px solid rgba(220, 184, 72, 0.28);
+  font-size: 0.75rem;
+  font-weight: 700;
 }
 
-.tl .co {
-  color: var(--b);
+/* Job title */
+.experience-section .tl h3 {
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 0 0 5px;
+}
+
+/* Company name */
+.experience-section .tl .co {
+  color: #e5bd4c;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Responsibilities */
+.experience-section .tl ul {
+  max-width: 100%;
+  padding-left: 20px;
+  line-height: 1.8;
+  font-size: 0.94rem;
+}
+
+.experience-section .tl li {
+  padding-left: 3px;
+  margin-bottom: 7px;
+}
+
+.experience-section .tl li::marker {
+  color: #e5bd4c;
+}
+
+/* Skill badges */
+.experience-section .experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.experience-section .experience-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 30px;
+  background: rgba(220, 184, 72, 0.09);
+  border: 1px solid rgba(220, 184, 72, 0.22);
+  color: #e9cb78;
+  font-size: 0.78rem;
   font-weight: 600;
-  margin-bottom: 8px;
+  transition: background 0.25s ease;
 }
 
-.tl p {
-  margin: 0;
-  color: var(--muted);
-  max-width: 64ch;
-  font-size: .96rem;
+.experience-section .experience-tags span:hover {
+  background: rgba(220, 184, 72, 0.18);
 }
 
-.tl ul {
-  margin: 0;
-  padding-left: 1.1em;
-  color: var(--muted);
-  max-width: 64ch;
-  font-size: .96rem;
-}
+/* Mobile responsive */
+@media (max-width: 600px) {
+  .experience-section .tl {
+    padding-left: 30px;
+    gap: 24px;
+  }
 
-.tl li {
-  margin-bottom: 4px;
+  .experience-section .tl article {
+    padding: 20px 17px;
+    border-radius: 15px;
+  }
+
+  .experience-section .tl article::before {
+    left: -32px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .experience-section .tl h3 {
+    font-size: 1.12rem;
+  }
+
+  .experience-section .tl .co {
+    font-size: 0.92rem;
+  }
+
+  .experience-section .tl ul {
+    font-size: 0.88rem;
+    line-height: 1.7;
+  }
+
+  .experience-section .experience-tags {
+    gap: 7px;
+  }
+
+  .experience-section .experience-tags span {
+    font-size: 0.72rem;
+    padding: 6px 10px;
+  }
 }
 
 /* Featured project */
