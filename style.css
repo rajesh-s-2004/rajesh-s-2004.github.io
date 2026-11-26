@@ -298,7 +298,7 @@ nav a.l.on {
 /* Hero section */
 
 .hero {
-  padding: 70px 0 44px;
+  padding: 30px 0 44px;
   overflow: hidden;
 }
 
@@ -1440,9 +1440,9 @@ footer {
 
 .hero-portrait {
   display: block;
-  width: 100%;
+  width: 110%;
   height: auto;
-  max-height: 570px;
+  max-height: 620px;
   object-fit: contain;
   filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.3));
 }
