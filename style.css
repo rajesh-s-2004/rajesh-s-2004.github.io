@@ -1401,3 +1401,175 @@ footer {
   object-fit: contain;
   display: block;
 }
+
+
+/* =================================
+   PREMIUM HOME PORTRAIT DESIGN
+================================= */
+
+.new-stage {
+  position: relative;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.portrait-glow {
+  position: absolute;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(225, 183, 65, 0.22),
+    transparent 70%
+  );
+  z-index: -1;
+}
+
+.portrait-wrap {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 490px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-portrait {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 570px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, 0.3));
+}
+
+.marketing-float {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 17px;
+  background: rgba(17, 27, 52, 0.94);
+  border: 1px solid rgba(224, 184, 65, 0.35);
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(12px);
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+.marketing-float b {
+  display: block;
+  color: #f5e8c4;
+  font-size: 14px;
+}
+
+.marketing-float small {
+  display: block;
+  color: #aab3c8;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.float-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(224, 184, 65, 0.14);
+  color: #e4bd4e;
+  font-size: 22px;
+}
+
+.seo-float {
+  top: 13%;
+  left: 0;
+}
+
+.ads-float {
+  top: 30%;
+  right: 0;
+  animation-delay: 0.5s;
+}
+
+.analytics-float {
+  bottom: 25%;
+  left: -2%;
+  animation-delay: 1s;
+}
+
+.leads-float {
+  bottom: 9%;
+  right: 0;
+  animation-delay: 1.5s;
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+/* Mobile responsive */
+
+@media (max-width: 768px) {
+  .new-stage {
+    min-height: 460px;
+    margin-top: 35px;
+  }
+
+  .portrait-wrap {
+    width: min(100%, 390px);
+  }
+
+  .hero-portrait {
+    max-height: 450px;
+  }
+
+  .marketing-float {
+    padding: 9px 11px;
+    gap: 7px;
+  }
+
+  .marketing-float b {
+    font-size: 11px;
+  }
+
+  .marketing-float small {
+    font-size: 9px;
+  }
+
+  .float-icon {
+    width: 27px;
+    height: 27px;
+    font-size: 17px;
+  }
+
+  .seo-float {
+    left: 0;
+    top: 10%;
+  }
+
+  .ads-float {
+    right: 0;
+    top: 27%;
+  }
+
+  .analytics-float {
+    left: 0;
+    bottom: 22%;
+  }
+
+  .leads-float {
+    right: 0;
+    bottom: 7%;
+  }
+}
