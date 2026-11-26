@@ -1653,3 +1653,83 @@ footer {
     bottom: 5%;
   }
 }
+
+
+/* FINAL HERO PORTRAIT ALIGNMENT */
+
+.new-stage {
+  min-height: 680px;
+  height: auto;
+  padding: 20px 0 55px;
+}
+
+.portrait-wrap {
+  width: min(100%, 440px);
+  margin: 0 auto;
+}
+
+.hero-portrait {
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+}
+
+/* Floating cards positioning */
+
+.seo-float {
+  top: 8%;
+  left: -5%;
+}
+
+.ads-float {
+  top: 25%;
+  right: -5%;
+}
+
+.analytics-float {
+  bottom: 24%;
+  left: -5%;
+}
+
+.leads-float {
+  bottom: 5%;
+  right: -5%;
+}
+
+/* Mobile layout */
+
+@media (max-width: 768px) {
+  .new-stage {
+    min-height: 560px;
+    height: auto;
+    padding: 20px 0 45px;
+  }
+
+  .portrait-wrap {
+    width: min(100%, 370px);
+  }
+
+  .hero-portrait {
+    max-height: 470px;
+  }
+
+  .seo-float {
+    top: 5%;
+    left: 0;
+  }
+
+  .ads-float {
+    top: 24%;
+    right: 0;
+  }
+
+  .analytics-float {
+    bottom: 22%;
+    left: 0;
+  }
+
+  .leads-float {
+    bottom: 4%;
+    right: 0;
+  }
+}
