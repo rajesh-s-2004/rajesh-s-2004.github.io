@@ -1573,3 +1573,83 @@ footer {
     bottom: 7%;
   }
 }
+
+
+/* HERO PORTRAIT VISIBILITY FIX */
+
+.new-stage {
+  min-height: 650px;
+  height: auto;
+  padding: 25px 0 45px;
+}
+
+.portrait-wrap {
+  width: min(100%, 530px);
+  align-items: center;
+}
+
+.hero-portrait {
+  width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+}
+
+/* Move cards away from the portrait */
+
+.seo-float {
+  top: 8%;
+  left: -3%;
+}
+
+.ads-float {
+  top: 25%;
+  right: -3%;
+}
+
+.analytics-float {
+  bottom: 25%;
+  left: -4%;
+}
+
+.leads-float {
+  bottom: 8%;
+  right: -3%;
+}
+
+/* Mobile adjustment */
+
+@media (max-width: 768px) {
+  .new-stage {
+    min-height: 540px;
+    height: auto;
+    padding: 25px 0 35px;
+  }
+
+  .portrait-wrap {
+    width: min(100%, 420px);
+  }
+
+  .hero-portrait {
+    max-height: 500px;
+  }
+
+  .seo-float {
+    left: 0;
+    top: 5%;
+  }
+
+  .ads-float {
+    right: 0;
+    top: 24%;
+  }
+
+  .analytics-float {
+    left: 0;
+    bottom: 23%;
+  }
+
+  .leads-float {
+    right: 0;
+    bottom: 5%;
+  }
+}
