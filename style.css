@@ -764,97 +764,220 @@ nav a.l.on {
   margin-bottom: 16px;
 }
 
-/* =========================================
-   PREMIUM HORIZONTAL CAREER JOURNEY
-========================================= */
+
+/* ==========================================
+   PREMIUM ZIGZAG EXPERIENCE DESIGN
+   Dark Navy + Gold Theme
+========================================== */
 
 .experience-section {
   position: relative;
   overflow: hidden;
 }
 
-.experience-section .career-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
-  align-items: stretch;
-  margin-top: 42px;
+/* Section heading - left aligned */
+.experience-section h2 {
+  text-align: left;
+  margin-bottom: 12px;
 }
 
-/* Career cards */
+.experience-section > .w > .lead {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+/* Main zigzag timeline */
+.experience-section .career-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 100px;
+  row-gap: 65px;
+  align-items: center;
+  margin-top: 65px;
+  padding: 15px 0;
+}
+
+/* Central glowing timeline */
+.experience-section .career-grid::before {
+  content: "";
+  position: absolute;
+  top: 3%;
+  bottom: 3%;
+  left: 50%;
+  width: 3px;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #c89b2c 8%,
+    #f5d77b 50%,
+    #c89b2c 92%,
+    transparent
+  );
+  box-shadow: 0 0 14px rgba(229, 189, 76, .35);
+}
+
+/* Alternating card positions */
+.experience-section .career-card:nth-child(1) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.experience-section .career-card:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.experience-section .career-card:nth-child(3) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* Premium experience cards */
 .experience-section .career-card {
   position: relative;
-  display: flex;
-  flex-direction: column;
   min-width: 0;
-  padding: 28px 24px;
+  padding: 28px;
+  border: 1px solid rgba(229, 189, 76, .25);
   border-radius: 20px;
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.055),
-    rgba(255, 255, 255, 0.018)
+    rgba(255, 255, 255, .065),
+    rgba(255, 255, 255, .015)
   );
-  border: 1px solid rgba(220, 184, 72, 0.22);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, .18);
   transition:
-    transform 0.35s ease,
-    border-color 0.35s ease,
-    box-shadow 0.35s ease;
+    border-color .35s ease,
+    box-shadow .35s ease;
 }
 
-/* Top row */
+/* Company logos */
+.experience-section .career-card::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 25px;
+  width: 68px;
+  height: 68px;
+  border-radius: 14px;
+  border: 1px solid rgba(229, 189, 76, .3);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+.experience-section .career-card:nth-child(1)::before {
+  background-image: url("maruthi%20logo.png");
+}
+
+.experience-section .career-card:nth-child(2)::before {
+  background-image: url("placement%20point%20solutions.png");
+}
+
+.experience-section .career-card:nth-child(3)::before {
+  background-image: url("why%20global%20services.png");
+}
+
+/* Space for logo in card top area */
 .experience-section .career-top {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 25px;
+  min-height: 42px;
+  margin-bottom: 18px;
 }
 
+/* Circular milestone numbers */
 .experience-section .career-number {
-  color: #e5bd4c;
-  font-size: 2rem;
-  line-height: 1;
+  position: absolute;
+  z-index: 3;
+  top: 26px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e5bd4c;
+  border-radius: 50%;
+  background: #0b1020;
+  color: #f5d77b;
+  font-size: 1.4rem;
   font-weight: 800;
-  letter-spacing: -1px;
+  box-shadow:
+    0 0 0 6px rgba(229, 189, 76, .10),
+    0 0 20px rgba(229, 189, 76, .35);
 }
 
-/* Current role badge */
-.experience-section .experience-status {
-  padding: 6px 11px;
-  border-radius: 30px;
-  color: #f5d77b;
-  background: rgba(220, 184, 72, 0.12);
-  border: 1px solid rgba(220, 184, 72, 0.3);
-  font-size: 0.72rem;
-  font-weight: 700;
-  white-space: nowrap;
+/* Milestone placement on central path */
+.experience-section .career-card:nth-child(1) .career-number,
+.experience-section .career-card:nth-child(3) .career-number {
+  left: -79px;
+}
+
+.experience-section .career-card:nth-child(2) .career-number {
+  right: -79px;
+}
+
+/* Gold connectors */
+.experience-section .career-card::after {
+  content: "";
+  position: absolute;
+  top: 53px;
+  width: 50px;
+  height: 2px;
+  background: #e5bd4c;
+  box-shadow: 0 0 10px rgba(229, 189, 76, .4);
+}
+
+.experience-section .career-card:nth-child(1)::after,
+.experience-section .career-card:nth-child(3)::after {
+  left: -50px;
+}
+
+.experience-section .career-card:nth-child(2)::after {
+  right: -50px;
 }
 
 /* Date */
 .experience-section .career-card time {
   display: block;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: .88rem;
   font-weight: 600;
   margin-bottom: 12px;
+}
+
+/* Current role badge */
+.experience-section .experience-status {
+  padding: 6px 12px;
+  border-radius: 30px;
+  color: #f5d77b;
+  background: rgba(220, 184, 72, .12);
+  border: 1px solid rgba(220, 184, 72, .3);
+  font-size: .75rem;
+  font-weight: 700;
 }
 
 /* Job title */
 .experience-section .career-card h3 {
   color: var(--text);
-  font-size: 1.28rem;
+  font-size: 1.3rem;
   line-height: 1.4;
-  margin: 0 0 9px;
+  margin: 0 0 8px;
 }
 
-/* Company */
+/* Company name */
 .experience-section .career-company {
   color: #e5bd4c;
-  font-size: 0.96rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
-  min-height: 46px;
+  margin-bottom: 17px;
 }
 
 /* Gold divider */
@@ -863,30 +986,29 @@ nav a.l.on {
   height: 3px;
   border-radius: 5px;
   background: linear-gradient(90deg, #f5d77b, #c89b2c);
-  margin: 19px 0;
+  margin: 18px 0;
 }
 
 /* Responsibilities heading */
 .experience-section .career-card h4 {
   color: var(--text);
-  font-size: 0.88rem;
+  font-size: .9rem;
   font-weight: 700;
   margin: 0 0 12px;
 }
 
-/* Responsibilities list */
+/* Responsibilities */
 .experience-section .career-card ul {
-  padding-left: 18px;
-  margin: 0 0 22px;
+  padding-left: 19px;
+  margin: 0 0 20px;
   color: var(--muted);
-  font-size: 0.89rem;
+  font-size: .92rem;
   line-height: 1.75;
-  flex-grow: 1;
 }
 
 .experience-section .career-card li {
+  margin-bottom: 7px;
   padding-left: 3px;
-  margin-bottom: 8px;
 }
 
 .experience-section .career-card li::marker {
@@ -898,75 +1020,113 @@ nav a.l.on {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto;
+  margin-top: 16px;
 }
 
 .experience-section .experience-tags span {
   display: inline-flex;
   align-items: center;
-  padding: 7px 10px;
+  padding: 7px 11px;
   border-radius: 30px;
   color: #e9cb78;
-  background: rgba(220, 184, 72, 0.09);
-  border: 1px solid rgba(220, 184, 72, 0.23);
-  font-size: 0.72rem;
+  background: rgba(220, 184, 72, .09);
+  border: 1px solid rgba(220, 184, 72, .28);
+  font-size: .74rem;
   font-weight: 600;
-  line-height: 1.3;
 }
 
-/* Hover effects */
+/* Premium hover */
 @media (hover: hover) {
   .experience-section .career-card:hover {
-    transform: translateY(-7px);
-    border-color: rgba(229, 189, 76, 0.65);
+    border-color: rgba(229, 189, 76, .7);
     box-shadow:
-      0 18px 42px rgba(0, 0, 0, 0.25),
-      0 0 22px rgba(229, 189, 76, 0.08);
-  }
-
-  .experience-section .career-card:hover .career-number {
-    text-shadow: 0 0 18px rgba(229, 189, 76, 0.45);
+      0 18px 40px rgba(0, 0, 0, .25),
+      0 0 22px rgba(229, 189, 76, .10);
   }
 }
 
-/* Tablet */
-@media (max-width: 950px) {
-  .experience-section .career-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* Mobile */
-@media (max-width: 650px) {
+/* Tablet and mobile */
+@media (max-width: 850px) {
   .experience-section .career-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
-    margin-top: 30px;
+    gap: 35px;
+    padding-left: 65px;
+    margin-top: 42px;
+  }
+
+  .experience-section .career-grid::before {
+    left: 25px;
+    transform: none;
+  }
+
+  .experience-section .career-card:nth-child(1),
+  .experience-section .career-card:nth-child(2),
+  .experience-section .career-card:nth-child(3) {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .experience-section .career-card {
-    padding: 24px 21px;
-    border-radius: 17px;
-  }
-
-  .experience-section .career-top {
-    margin-bottom: 20px;
+    padding: 26px 22px;
   }
 
   .experience-section .career-number {
-    font-size: 1.8rem;
+    left: -64px !important;
+    right: auto !important;
+    top: 28px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+
+  .experience-section .career-card::after {
+    left: -15px !important;
+    right: auto !important;
+    width: 15px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .experience-section .career-grid {
+    padding-left: 48px;
+    gap: 28px;
+  }
+
+  .experience-section .career-grid::before {
+    left: 18px;
+  }
+
+  .experience-section .career-card {
+    padding: 22px 17px;
+  }
+
+  .experience-section .career-number {
+    left: -48px !important;
+    width: 38px;
+    height: 38px;
+    font-size: .95rem;
+    border-width: 2px;
+  }
+
+  .experience-section .career-card::before {
+    width: 58px;
+    height: 58px;
+    top: 20px;
+    left: 17px;
+  }
+
+  .experience-section .career-top {
+    min-height: 58px;
+    margin-bottom: 18px;
   }
 
   .experience-section .career-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .experience-section .career-company {
-    min-height: auto;
+    font-size: 1.12rem;
   }
 
   .experience-section .career-card ul {
-    font-size: 0.88rem;
+    font-size: .87rem;
   }
 }
 
@@ -974,72 +1134,6 @@ nav a.l.on {
 @media (prefers-reduced-motion: reduce) {
   .experience-section .career-card {
     transition: none;
-  }
-}
-
-/* Skill badges */
-.experience-section .experience-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 18px;
-}
-
-.experience-section .experience-tags span {
-  display: inline-flex;
-  align-items: center;
-  padding: 7px 12px;
-  border-radius: 30px;
-  background: rgba(220, 184, 72, 0.09);
-  border: 1px solid rgba(220, 184, 72, 0.22);
-  color: #e9cb78;
-  font-size: 0.78rem;
-  font-weight: 600;
-  transition: background 0.25s ease;
-}
-
-.experience-section .experience-tags span:hover {
-  background: rgba(220, 184, 72, 0.18);
-}
-
-/* Mobile responsive */
-@media (max-width: 600px) {
-  .experience-section .tl {
-    padding-left: 30px;
-    gap: 24px;
-  }
-
-  .experience-section .tl article {
-    padding: 20px 17px;
-    border-radius: 15px;
-  }
-
-  .experience-section .tl article::before {
-    left: -32px;
-    width: 15px;
-    height: 15px;
-  }
-
-  .experience-section .tl h3 {
-    font-size: 1.12rem;
-  }
-
-  .experience-section .tl .co {
-    font-size: 0.92rem;
-  }
-
-  .experience-section .tl ul {
-    font-size: 0.88rem;
-    line-height: 1.7;
-  }
-
-  .experience-section .experience-tags {
-    gap: 7px;
-  }
-
-  .experience-section .experience-tags span {
-    font-size: 0.72rem;
-    padding: 6px 10px;
   }
 }
 
